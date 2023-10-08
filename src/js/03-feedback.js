@@ -4,7 +4,7 @@ import throttle from "lodash.throttle";
 const LOCAL_KEY = 'feedback-form-state';
 //Ця константа використовується для завдання ключа, під яким дані форми зберігатимуться у локальному сховищі браузера.
 
-form = document.querySelector('.feedback-form');
+const form = document.querySelector('.feedback-form');
 
 form.addEventListener('input', throttle(onInputData, 500));
 form.addEventListener('submit', onFormSubmit);
